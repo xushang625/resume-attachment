@@ -1,0 +1,65 @@
+/* pages/home/home.wxss */
+
+/* 首页轮播图 */
+.swp{
+  height: 500rpx;
+  width: 750rpx;
+}
+.swp .wx-swiper-dots {
+  position: absolute;
+  bottom: 40rpx;
+}
+
+.swp .wx-swiper-dot{
+  width: 18rpx;
+  height: 18rpx;
+  background-color: white;
+}
+
+.swp .wx-swiper-dot-active {
+  width: 22rpx;
+  height: 22rpx;
+  background-color: black;
+}
+
+.swp swiper-item{
+  width: 750rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swp swiper-item image{
+  border: 1rpx solid plum;
+  box-shadow: 0 0 25rpx pink;
+  border-radius: 25rpx;
+  width: 700rpx;
+}
+
+/* 商品类目展示图 */
+.homcom{
+  padding: 25rpx;
+  display: flex;
+  justify-content: space-between;
+  width: 700rpx;
+}
+
+.homcom image{
+  border-radius: 25rpx;
+  border: 1rpx solid gray;
+  width: 325rpx;
+  height: 180rpx;
+  box-shadow: 0 0 25rpx plum;
+}
+
+.limgbox{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 150rpx;
+}
+
+.limg{
+  height: 150rpx;
+  width: 150rpx;
+}

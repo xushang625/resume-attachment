@@ -1,0 +1,17 @@
+<!--pages/mine/mine.wxml-->
+
+<view class="mypage">
+  <view class="userinfobox">
+    <view class="userimgbox">
+      <image class="userimg" src="{{userimg}}" mode="aspectFit"/>
+    </view>
+    <view class="userinfo">
+      <view class="username">{{username}}</view>
+    </view>
+  </view>
+  <view class="userfuc">
+    <view class="actblc">
+      账户余额<text class="blcnum">{{actblc}}</text> 元
+    </view>
+  </view>
+</view>

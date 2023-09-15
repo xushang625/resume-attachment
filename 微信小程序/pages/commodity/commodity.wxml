@@ -1,0 +1,80 @@
+<!--pages/commodity/commodity.wxml-->
+
+<!-- 顶部图片 -->
+<view class="uppimgbox">
+  <block wx:for="{{uppimgsrc}}" wx:key="index">
+    <image class="litimg" src="{{item.img}}" mode="aspectFit"/>
+  </block>
+</view>
+<!-- 商品列表 -->
+<view class="scr">
+  <!-- 左侧列表 -->
+  <scroll-view class="left" scroll-y="true">
+    <block wx:for="{{typlst}}" wx:key="index">
+      <view class="{{item.typname==tmpname?'sltedtyp':''}}" bindtap="typtap" data-t="{{item.typname}}">{{item.typname}}</view>
+    </block>
+  </scroll-view>
+<!-- 右侧列表 -->
+  <scroll-view class="right" scroll-y="true" scroll-top="{{scrolltop}}">
+    <block wx:for="{{com}}" wx:key="index">
+      <view wx:if="{{item.gdstypname===tmpname}}" class="good">
+        <!-- 商品图 -->
+        <image class="goodimg" src="{{item.img}}" mode="heightFix"/>
+        <!-- 商品信息 -->
+        <view class="goodinfo">
+          <!-- 上部分 -->
+          <view class="above">
+            <!-- 商品名 -->
+            <view class="goodname">
+              <view>{{item.name}}</view>
+            </view>
+          </view>
+          <!-- 价格和数量 -->
+          <view class="below">
+            <!-- 商品价格 -->
+            <view class="price">
+              <view>{{item.price}}元</view>
+            </view>
+            <!-- 商品数量 -->
+            <view class="goodsnum">
+              <block wx:if="{{!item.num==0}}">
+                <image class="subsbl" bindtap="subtap" data-idx="{{index}}" src="/icons/sub.png" mode="aspectFit"/>
+              <view class="num">{{item.num}}</view>
+              </block>
+              <image class="addsbl" bindtap="addtap" data-idx="{{index}}" src="/icons/add.png" mode="aspectFit"/>
+            </view>
+          </view>
+        </view>
+      </view>
+    </block>
+    <view class="btm">下面没有了哦</view>
+  </scroll-view>
+</view>
+
+<!-- 遮罩 -->
+<view wx:if="{{crtmsk}}" class="msk" bindtap="crttap"/>
+
+<!-- 购物车 -->
+<scroll-view wx:if="{{crtmsk}}" class="crtbox" scroll-y="true">
+  <block wx:for="{{com}}" wx:key="index">
+    <view class="crtinf" wx:if="{{!item.num==0}}">
+      <image class="crtimg" src="{{item.img}}" mode="heightFix"/>
+      <view>{{item.name}}</view>
+      <view class="crtprc">¥{{item.price}}</view>
+      <view class="crtadn">
+        <block wx:if="{{!item.num==0}}">
+          <image class="subsbl" bindtap="subtap" data-idx="{{index}}" src="/icons/sub.png" mode="aspectFit"/>
+          <view>{{item.num}}</view>
+        </block>
+        <image class="addsbl" bindtap="addtap" data-idx="{{index}}" src="/icons/add.png" mode="aspectFit"/>
+      </view>
+    </view>
+  </block>
+</scroll-view>
+
+<!-- 去支付图片 -->
+<view class="paybox">
+  <image class="payimg" bindtap="crttap" src="{{payimgsrc}}" mode="aspectFit"/>
+  <text class="ttlprctxt" bindtap="crttap" style="white-space:pre-wrap">¥{{ttlprc}}</text>
+  <view class="paybtn" bindtap="paytap">去支付</view>
+</view>

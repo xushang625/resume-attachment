@@ -1,0 +1,22 @@
+C:\Users\31479\Downloads\Csharp-pintu-master\拼图\bin\Debug\拼图.exe.config
+C:\Users\31479\Downloads\Csharp-pintu-master\拼图\bin\Debug\拼图.exe
+C:\Users\31479\Downloads\Csharp-pintu-master\拼图\bin\Debug\拼图.pdb
+C:\Users\31479\Downloads\Csharp-pintu-master\拼图\obj\Debug\拼图.csproj.AssemblyReference.cache
+C:\Users\31479\Downloads\Csharp-pintu-master\拼图\obj\Debug\拼图.csproj.SuggestedBindingRedirects.cache
+C:\Users\31479\Downloads\Csharp-pintu-master\拼图\obj\Debug\拼图.Form1.resources
+C:\Users\31479\Downloads\Csharp-pintu-master\拼图\obj\Debug\拼图.Properties.Resource.resources
+C:\Users\31479\Downloads\Csharp-pintu-master\拼图\obj\Debug\拼图.csproj.GenerateResource.cache
+C:\Users\31479\Downloads\Csharp-pintu-master\拼图\obj\Debug\拼图.csproj.CoreCompileInputs.cache
+C:\Users\31479\Downloads\Csharp-pintu-master\拼图\obj\Debug\拼图.exe
+C:\Users\31479\Downloads\Csharp-pintu-master\拼图\obj\Debug\拼图.pdb
+C:\code\Develoment Tools\final\拼图\bin\Debug\拼图.exe.config
+C:\code\Develoment Tools\final\拼图\bin\Debug\拼图.exe
+C:\code\Develoment Tools\final\拼图\bin\Debug\拼图.pdb
+C:\code\Develoment Tools\final\拼图\obj\Debug\拼图.csproj.AssemblyReference.cache
+C:\code\Develoment Tools\final\拼图\obj\Debug\拼图.csproj.SuggestedBindingRedirects.cache
+C:\code\Develoment Tools\final\拼图\obj\Debug\拼图.Form1.resources
+C:\code\Develoment Tools\final\拼图\obj\Debug\拼图.Properties.Resource.resources
+C:\code\Develoment Tools\final\拼图\obj\Debug\拼图.csproj.GenerateResource.cache
+C:\code\Develoment Tools\final\拼图\obj\Debug\拼图.csproj.CoreCompileInputs.cache
+C:\code\Develoment Tools\final\拼图\obj\Debug\拼图.exe
+C:\code\Develoment Tools\final\拼图\obj\Debug\拼图.pdb

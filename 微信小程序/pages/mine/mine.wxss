@@ -1,0 +1,62 @@
+/* pages/mine/mine.wxss */
+
+/* 整个页面 */
+.mypage{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 750rpx;
+  height: 100vh;
+}
+
+.userinfobox{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 20vh;
+  width: 750rpx;
+}
+
+.userimgbox{
+  border-radius: 100rpx;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  background-color: white;
+  box-shadow: 0rpx 0rpx 90rpx pink;
+  height: 150rpx;
+  width: 150rpx;
+}
+
+.userimgbox image{
+  height: 180rpx;
+  width: 180rpx;
+}
+
+.username{
+  font-size: large;
+  width: 300rpx;
+}
+
+.userfuc{
+  background-color: whitesmoke;
+  height: 80vh;
+  width: 750rpx;
+}
+
+.actblc{
+  margin-top: 10rpx;
+  padding: 25rpx;
+  width: 700rpx;
+  height: 50rpx;
+  background-color: white;
+  font-size: large;
+  display: flex;
+  align-items: center;
+}
+
+.blcnum{
+  padding-left: 25rpx;
+  color: lightcoral;
+}

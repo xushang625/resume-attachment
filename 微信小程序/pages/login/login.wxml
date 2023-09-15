@@ -1,0 +1,11 @@
+<!--pages/login/login.wxml-->
+
+<view class="cfmbox">
+  <view class="imgbox">
+    <image src="/icons/bk.png" mode="aspectFit"/>
+    <image src="/icons/klm.png" mode="aspectFit"/>
+  </view>
+  <button class="cfmbtn" bindtap="cfmid">
+  <view>点击验证库库身份</view>
+  </button>
+</view>

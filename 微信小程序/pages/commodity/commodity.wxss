@@ -1,0 +1,255 @@
+/* pages/commodity/commodity.wxss */
+
+/* 顶部样式 */
+.uppimgbox{
+  position: absolute;
+  top: 2vh;
+  width: 750rpx;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+.litimg{
+  height: 10vh;
+  width: 10vh;
+}
+
+/* 列表样式 */
+.scr{
+  background-color: whitesmoke;
+  position: fixed;
+  bottom: 0;
+  width: 750rpx;
+  display: flex;
+  flex-direction: row;
+  height: 88vh;
+}
+
+/* 左侧样式 */
+.left{
+  width: 180rpx;
+}
+
+.left view{
+  border-top: 1rpx solid white;
+  border-bottom: 1rpx solid white;
+  text-align: center;
+  padding: 25rpx 0 25rpx 0;
+  position: relative;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+
+/* 分类选中样式 */
+.sltedtyp{
+  background-color: white;
+}
+
+.sltedtyp::before{
+  content: ' ';
+  display: block;
+  width: 10rpx;
+  height: 100rpx;
+  background-color: pink;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* 右侧样式 */
+.right{
+  background-color: white;
+  border-radius: 25rpx;
+  margin: 20rpx;
+  width: 530rpx;
+}
+
+/* 商品样式 */
+.good{
+  display: flex;
+  padding: 15rpx;
+  display: flex;
+  justify-content: space-between;
+  height: 180rpx;
+}
+
+/* 商品图片样式 */
+.goodimg{
+  border-radius: 20rpx;
+  width: 180rpx;
+  height: 180rpx;
+}
+
+/* 商品信息样式 */
+.goodinfo{
+  width: 300rpx;
+  height: 180rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 上部分样式 */
+.above{
+  height: 80rpx;
+}
+
+/* 商品名样式 */
+.goodname{
+  height: 75rpx;
+  font-size: large;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* 下部分样式 */
+.below{
+  display: flex;
+  align-items: center;
+  height: 100rpx;
+}
+
+/* 商品价格样式 */
+.price{
+  height: 50rpx;
+  width: 150rpx;
+  color: lightcoral;
+}
+
+/* 商品数量样式 */
+.goodsnum{
+  display: flex;
+  justify-content: flex-end;
+  width: 150rpx;
+  height: 50rpx;
+}
+
+/* 数字样式 */
+.num{
+  height: 50rpx;
+  width: 50rpx;
+  text-align: center;
+}
+/* 加减号样式 */
+.subsbl{
+  border: 1rpx solid pink;
+  border-radius: 10rpx;
+  width: 48rpx;
+  height: 48rpx;
+}
+
+.addsbl{
+  background-color: pink;
+  border-radius: 10rpx;
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.btm{
+  height: 250rpx;
+  display: flex;
+  justify-content: center;
+}
+
+/* 购物车样式 */
+
+.crtbox{
+  padding-bottom: 150rpx;
+  background-color: white;
+  border-top-left-radius: 25rpx;
+  border-top-right-radius: 25rpx;
+  position: fixed;
+  bottom: 0;
+  width: 750rpx;
+  max-height: 40vh;
+}
+
+.crtinf{
+  display: flex;
+  align-items: center;
+}
+
+.crtimg{
+  height: 150rpx;
+  border-radius: 25rpx;
+  margin: 25rpx;
+}
+
+.crtinf view{
+  font-size: large;
+  width: 180rpx;
+}
+
+.crtadn{
+  display: flex;
+}
+
+.crtadn view{
+  text-align: center;
+  width: 50rpx;
+  height: 50rpx;
+  font-size: medium;
+}
+.crtprc{
+  margin: 10rpx;
+  color: coral;
+}
+
+/* 支付栏样式 */
+.paybox{
+  box-shadow:1rpx 1rpx 25rpx pink;
+  background-color: #fff;
+  border-radius: 50rpx;
+  position: fixed;
+  bottom: 25rpx;
+  left: 75rpx;
+  height: 80rpx;
+  width: 600rpx;
+}
+
+.payimg{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 150rpx;
+  height: 150rpx;
+}
+
+.ttlprctxt{
+  font-size: x-large;
+  font-weight: bolder;
+  position: absolute;
+  left: 150rpx;
+  width: 300rpx;
+  height: 80rpx;
+  display:flex;
+  align-items: center;
+}
+
+.paybtn{
+  border-bottom-right-radius: 50rpx;
+  border-top-right-radius: 50rpx;
+  position: absolute;
+  font-size: large;
+  font-weight: bolder;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80rpx;
+  width: 150rpx;
+  background-color: lightpink;
+  color: white;
+}
+
+/* 遮罩样式 */
+.msk{
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 750rpx;
+  height: 100vh;
+}

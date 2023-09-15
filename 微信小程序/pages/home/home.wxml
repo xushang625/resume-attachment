@@ -1,0 +1,27 @@
+<!--pages/home/home.wxml-->
+
+<!--首页轮播图-->
+<swiper class="swp"indicator-dots="true" autoplay="true" interval="3000" circular="true">
+  <block wx:for="{{swpimgsrc}}" wx:key="index">
+    <swiper-item>
+      <image bindtap="tocom" data-homtyp="{{item.typname}}" src="{{item.img}}" mode="aspectFill"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<!-- 商品类目展示图 -->
+<view class="homcom">
+  <block wx:for="{{homcomsrc1}}" wx:key="index">
+    <image bindtap="tocom" src="{{item.img}}" data-homtyp="{{item.imgtyp}}" mode="widthFix"/>
+  </block>
+</view>
+<view class="homcom">
+  <block wx:for="{{homcomsrc2}}" wx:key="index">
+    <image bindtap="tocom" data-homtyp="{{item.imgtyp}}" src="{{item.img}}" mode="widthFix"/>
+  </block>
+</view>
+
+<!-- liteimage -->
+<view class="limgbox">
+  <image class="limg" src="{{zlklmsrc}}" mode="aspectFit"/>
+</view>
